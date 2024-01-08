@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Новости</title>
+  <meta name="title" content="Новости - самые последние новости!">
+  <meta name="description" content="Новостной ресурс">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="169" height="60" alt="NewsSphere logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Главная</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Новое</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Поиск</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BAR
+  -->
+
+  <div class="search-bar" data-search-bar>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Поиск" class="input-field">
+
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <p class="search-bar-text">Введите текст</p>
+
+  </div>
+
+  <div class="overlay" data-overlay data-search-toggler></div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="Главная">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <strong class="strong">Добро пожаловать.</strong> Смотрите самые последние новости.
+          </h1>
+
+          <div class="wrapper">
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Почта" class="email-field">
+
+              <button type="submit" class="btn">Подписаться</button>
+            </form>
+
+            <p class="newsletter-text">
+              Получайте самые последние новости первым
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section featured" aria-label="featured post">
+        <div class="container">
+
+          <p class="section-subtitle">
+            Посмотрите наши <strong class="strong">лучшие истории</strong>
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/article-1.png" width="500" height="600" loading="lazy"
+                    alt="New technology is not good or evil in and of itself" class="img-cover">
+
+                
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Освоение Технологических Возможностей: видеокарты
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    В этой статье мы рассмотрим, какие профессии могут выиграть
+                     от глубокого изучения этого ключевого компонента компьютерных систем.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/featured-2.png" width="500" height="600" loading="lazy"
+                    alt="Влияние ИИ на креативные профессии" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Влияние ИИ на креативные профессии
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Сможет ли искусственный интеллект заменить человека даже
+                    в тех профессиях, которые требуют нестандартного мышления?
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/featured-3.jpg" width="500" height="600" loading="lazy"
+                    alt="Идеал кроется в конечном продукте" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Идеал кроется в конечном продукте
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    В поисках совершенства мы часто стремимся к созданию идеальных вещей,
+                     и в этом стремлении часто обнаруживаем, что идеал кроется не столько
+                      в самих усилиях, сколько в конечном продукте. 
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/featured-4.jpg" width="500" height="600" loading="lazy"
+                    alt="У всех своя жизненная история" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      У всех своя жизненная история
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    В бескрайнем мозаичном плетении времени и событий каждый
+                    из нас несет на плечах уникальную жизненную историю.
+                    В этой захватывающей симфонии судьбы каждая нота, каждый момент, становится
+                    уникальным мелодическим отрывком в общем произведении жизни. 
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/featured-5.jpg" width="500" height="600" loading="lazy"
+                    alt="Разница - качество" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Разница - качество
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    В мире, насыщенном разнообразием и возможностями,
+                    мы постоянно сталкиваемся с понятием "качества" 
+                    и осознаем, что именно эта характеристика играет
+                    решающую роль в наших выборах и предпочтениях.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images/featured-6.png" width="500" height="600" loading="lazy"
+                    alt="Проблемы не причина останавливаться" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Проблемы не причина останавливаться
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    В жизни каждого из нас неизбежно возникают трудности и препятствия
+                    , которые кажутся непреодолимыми. Однако, вместо того чтобы видеть
+                    проблемы как причину для остановки, мы можем взглянуть на них как
+                    на вызов и возможность для роста. 
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="169" height="60" alt="NewsSphere logo">
+          </a>
+
+          <p class="footer-text">
+            Лучшие новости на планете.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Социальные сети</p>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Facebook</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Twitter</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-pinterest"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Pinterest</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">О нас</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Помощь</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link hover:underline">Связаться с нами</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">404</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Конфедициальность</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Функции</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">События</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Блог</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Рекомендации</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Вопрос-Ответ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Свидетельство</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="section footer-bottom">
+
+        <p class="copyright">
+          &copy; 2023. Проект <a href="#" class="copyright-link hover:underline">Горяева Дмитрия</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
